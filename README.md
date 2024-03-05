@@ -6,9 +6,9 @@ This is the base repository for AI for Games @ Swinburne University. Students ar
 # 2024 AI for Games
 
 ## Who Am I?
-*Name - Senithu Perera 
-*Student ID - 104208468
-*Email - 104208468@student.swin.edu.au
+* Name - Senithu Perera 
+* Student ID - 104208468
+* Email - 104208468@student.swin.edu.au
 
 ## Purpose
 * Your fork of this repository is for you and the teaching staff only. It should private and not be visible to the world.

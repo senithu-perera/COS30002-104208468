@@ -37,7 +37,20 @@ class TicTacToe(object):
         self.winner = None
         self.move = None
         # by default the human player starts. This could be random or a choice.
-        self.current_player = 'x'
+        print("!Choose who plays first!")
+        print("1 - I'm going first")
+        print("2 - Let ai go first")
+
+        _choice = int(input ('What is your choice? '))
+
+        try:
+            if (_choice == 1):
+                self.current_player = 'x'       
+            elif (_choice == 2):
+                self.current_player = 'o'
+        
+        except:
+            print("Not a valid input")
         # Welcome ...
         print('Welcome to the amazing+awesome tic-tac-toe!')
         # Show help (number) details
@@ -81,13 +94,12 @@ class TicTacToe(object):
 
     def get_human_move(self):
         '''Get a human players raw input '''
-        return input('[0-8] >> ')
+        _human_choice = input('[0-8] >> ')
+        return _human_choice
 
     def get_ai_move(self):
-        '''Get the AI's next move '''
-        # A simple dumb random move - valid or NOT!
-        # Note: It is the models responsibility to check for valid moves...
-        return randrange(9) # [0..8]
+             
+        return randrange(9)
 
     #===========================================================================
     # Standard trinity of game loop methods (functions)
